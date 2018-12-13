@@ -18,6 +18,9 @@ ENV LC_ALL C.UTF-8
 
 WORKDIR /app
 
+EXPOSE 5555
+EXPOSE 5556
+
 #ENTRYPOINT []
 CMD ["/app/docker/entrypoint.sh"]
 
