@@ -2,8 +2,8 @@ FROM tensorflow/tensorflow:1.12.0-py3
 
 #FROM tensorflow/tensorflow:1.12.0-gpu-py3
 
-RUN pip install bert-serving-server
-RUN pip install bert-serving-client
+RUN pip install bert-serving-server==1.5.4
+RUN pip install bert-serving-client==1.5.4
 
 RUN apt-get update && apt-get install -y git wget
 RUN echo "source /usr/share/bash-completion/completions/git" >> ~/.bashrc

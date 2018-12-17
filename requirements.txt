@@ -1,0 +1,4 @@
+# sudo pip3 install -r requirements.txt
+scikit-learn==0.20.0
+bert-serving-client==1.5.4
+
