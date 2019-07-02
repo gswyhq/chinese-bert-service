@@ -3,7 +3,7 @@ chinese-bert-service
 
 docker build -t gswyhq/chinese-bert-service --no-cache -f Dockerfile .
 
-docker run --rm -it -p 15555:5555 -p 15556:5556 gswyhq/chinese-bert-service bert-serving-start -num_worker=1 -model_dir /tmp/chinese_L-12_H-768_A-12
+docker run --rm -it -p 15555:5555 -p 15556:5556 gswyhq/chinese-bert-service bert-serving-start -num_worker=1 -model_dir /tmp/chinese_L-12_H-768_A-12 -cpu
 
 ```python
 from bert_serving.client import BertClient
